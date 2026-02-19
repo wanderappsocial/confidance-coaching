@@ -14,30 +14,20 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
 
         {/* Logo */}
-        <div className="flex items-center">
-          <Image
-            src="/images/logo.png"
-            alt="Confidance Logo"
-            width={170}
-            height={50}
-            priority
-          />
-        </div>
+        <Image
+          src="/images/logo.png"
+          alt="Confidance Logo"
+          width={170}
+          height={50}
+          priority
+        />
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-6 text-sm text-black">
 
-          <li>
-            <Link className="hover:opacity-70" href="/">Home</Link>
-          </li>
-
-          <li>
-            <Link className="hover:opacity-70" href="/about">About</Link>
-          </li>
-
-          <li>
-            <Link className="hover:opacity-70" href="/areas">Areas</Link>
-          </li>
+          <li><Link className="hover:opacity-70" href="/">Home</Link></li>
+          <li><Link className="hover:opacity-70" href="/about">About</Link></li>
+          <li><Link className="hover:opacity-70" href="/areas">Areas</Link></li>
 
           {/* Desktop Dropdown */}
           <li className="relative group">
@@ -68,23 +58,9 @@ export default function Navbar() {
             </div>
           </li>
 
-          <li>
-            <Link className="hover:opacity-70" href="/stories">
-              Success Stories
-            </Link>
-          </li>
-
-          <li>
-            <Link className="hover:opacity-70" href="/contact">
-              Contact Us
-            </Link>
-          </li>
-
-          <li>
-            <Link className="hover:opacity-70" href="/faq">
-              FAQs
-            </Link>
-          </li>
+          <li><Link className="hover:opacity-70" href="/stories">Success Stories</Link></li>
+          <li><Link className="hover:opacity-70" href="/contact">Contact Us</Link></li>
+          <li><Link className="hover:opacity-70" href="/faq">FAQs</Link></li>
 
         </ul>
 
@@ -102,70 +78,91 @@ export default function Navbar() {
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-
       </nav>
 
-      {/* Mobile Menu */}
-      <div
-        className={`md:hidden bg-white border-t shadow-lg transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-screen py-6" : "max-h-0"
-        }`}
-      >
-        <div className="px-6 space-y-4 text-black">
+      {/* ================= MOBILE MENU ================= */}
+      {isOpen && (
+        <div className="md:hidden fixed inset-0 bg-white z-50 flex flex-col">
 
-          <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
-          <Link href="/areas" onClick={() => setIsOpen(false)}>Areas</Link>
-
-          {/* Mobile Services Dropdown */}
-          <div>
-            <button
-              onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex justify-between w-full"
-            >
-              Our Services
-              <span>{servicesOpen ? "−" : "+"}</span>
+          {/* Top Bar */}
+          <div className="flex items-center justify-between px-6 py-4 border-b">
+            <Image
+              src="/images/logo.png"
+              alt="Confidance Logo"
+              width={150}
+              height={40}
+            />
+            <button onClick={() => setIsOpen(false)}>
+              <X size={28} />
             </button>
-
-            {servicesOpen && (
-              <div className="pl-4 mt-3 space-y-3">
-                <Link
-                  href="/services/life-coaching"
-                  onClick={() => setIsOpen(false)}
-                  className="block"
-                >
-                  Life Coaching
-                </Link>
-
-                <Link
-                  href="/services/other-services"
-                  onClick={() => setIsOpen(false)}
-                  className="block"
-                >
-                  Other Services
-                </Link>
-              </div>
-            )}
           </div>
 
-          <Link href="/stories" onClick={() => setIsOpen(false)}>
-            Success Stories
-          </Link>
+          {/* Menu Items */}
+          <div className="flex flex-col px-6 py-8 space-y-6 text-lg text-black">
 
-          <Link href="/contact" onClick={() => setIsOpen(false)}>
-            Contact Us
-          </Link>
+            <Link href="/" onClick={() => setIsOpen(false)} className="block">
+              Home
+            </Link>
 
-          <Link href="/faq" onClick={() => setIsOpen(false)}>
-            FAQs
-          </Link>
+            <Link href="/about" onClick={() => setIsOpen(false)} className="block">
+              About
+            </Link>
 
-          <button className="w-full bg-pink-400 text-black px-5 py-2 rounded-full text-sm mt-4">
-            Book a Free Call
-          </button>
+            <Link href="/areas" onClick={() => setIsOpen(false)} className="block">
+              Areas
+            </Link>
 
+            {/* Services Dropdown */}
+            <div>
+              <button
+                onClick={() => setServicesOpen(!servicesOpen)}
+                className="flex justify-between items-center w-full"
+              >
+                <span>Our Services</span>
+                <span className="text-xl">
+                  {servicesOpen ? "−" : "+"}
+                </span>
+              </button>
+
+              {servicesOpen && (
+                <div className="flex flex-col mt-4 space-y-4 pl-4 text-base">
+                  <Link
+                    href="/services/life-coaching"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Life Coaching
+                  </Link>
+
+                  <Link
+                    href="/services/other-services"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Other Services
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link href="/stories" onClick={() => setIsOpen(false)} className="block">
+              Success Stories
+            </Link>
+
+            <Link href="/contact" onClick={() => setIsOpen(false)} className="block">
+              Contact Us
+            </Link>
+
+            <Link href="/faq" onClick={() => setIsOpen(false)} className="block">
+              FAQs
+            </Link>
+
+            {/* CTA */}
+            <button className="mt-6 bg-pink-400 text-black py-3 rounded-full text-base">
+              Book a Free Call
+            </button>
+
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }
