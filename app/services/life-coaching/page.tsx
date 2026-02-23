@@ -35,8 +35,8 @@ export default function LifeCoachingPage() {
           <p className="text-black/80 leading-relaxed">
             Every child is unique, which is why Bina’s coaching follows a guided
             journey rather than a one-size-fits-all approach. Support is always
-            tailored, age-appropriate, and centred around building trust,
-            emotional awareness, and self-understanding.
+            tailored, age-appropriate and centred around building trust,
+            emotional awareness and self-understanding.
             <br /><br />
             All coaching journeys begin with a strong foundation before moving
             into more personalised support.
@@ -44,30 +44,84 @@ export default function LifeCoachingPage() {
         </div>
 
         {/* Stage Buttons */}
-        <div className="flex flex-col md:flex-row justify-center gap-10">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
 
-          <button
-            onClick={() => setActiveModal("stage1")}
-            className="bg-white/80 backdrop-blur-md px-10 py-6 rounded-2xl shadow-lg hover:scale-105 transition text-black"
-          >
-            Stage One: Identity Foundations
-          </button>
+      {/* Stage 1 */}
+      <button
+        onClick={() => setActiveModal("stage1")}
+        className="
+          w-64 h-64
+          md:w-72 md:h-72
+          rounded-full
+          bg-white/85 backdrop-blur-md
+          shadow-xl
+          flex items-center justify-center
+          text-center
+          px-6
+          text-black font-medium
+          transition-all duration-500
+          hover:-translate-y-3
+          hover:shadow-2xl
+          hover:bg-white
+        "
+      >
+        <span className="leading-relaxed">
+          Stage One<br />
+          <strong>Identity Foundations</strong>
+        </span>
+      </button>
 
-          <button
-            onClick={() => setActiveModal("stage2")}
-            className="bg-white/80 backdrop-blur-md px-10 py-6 rounded-2xl shadow-lg hover:scale-105 transition text-black"
-          >
-            Stage Two: Personal Growth Coaching
-          </button>
+      {/* Stage 2 */}
+      <button
+        onClick={() => setActiveModal("stage2")}
+        className="
+          w-64 h-64
+          md:w-72 md:h-72
+          rounded-full
+          bg-white/85 backdrop-blur-md
+          shadow-xl
+          flex items-center justify-center
+          text-center
+          px-6
+          text-black font-medium
+          transition-all duration-500
+          hover:-translate-y-3
+          hover:shadow-2xl
+          hover:bg-white
+        "
+      >
+        <span className="leading-relaxed">
+          Stage Two<br />
+          <strong>Personal Growth Coaching</strong>
+        </span>
+      </button>
 
-          <button
-            onClick={() => setActiveModal("stage3")}
-            className="bg-white/80 backdrop-blur-md px-10 py-6 rounded-2xl shadow-lg hover:scale-105 transition text-black"
-          >
-            Stage Three: Ongoing Support
-          </button>
+      {/* Stage 3 */}
+      <button
+        onClick={() => setActiveModal("stage3")}
+        className="
+          w-64 h-64
+          md:w-72 md:h-72
+          rounded-full
+          bg-white/85 backdrop-blur-md
+          shadow-xl
+          flex items-center justify-center
+          text-center
+          px-6
+          text-black font-medium
+          transition-all duration-500
+          hover:-translate-y-3
+          hover:shadow-2xl
+          hover:bg-white
+        "
+      >
+        <span className="leading-relaxed">
+          Stage Three<br />
+          <strong>Ongoing Support</strong>
+        </span>
+      </button>
 
-        </div>
+      </div>
       </div>
 
       {/* Modal (unchanged below) */}
@@ -82,7 +136,7 @@ export default function LifeCoachingPage() {
             </h2>
             <p className="text-black/80 leading-relaxed">
             This is the starting point for all clients.
-            During this stage, girls are gently supported to explore who they are, understand their emotions, and begin developing a positive relationship with themselves. This phase focuses on emotional awareness, self-expression, and building trust, allowing a strong and supportive coaching relationship to form.
+            During this stage, girls are gently supported to explore who they are, understand their emotions and begin developing a positive relationship with themselves. This phase focuses on emotional awareness, self-expression and building trust; allowing a strong and supportive coaching relationship to form.
             ‘Identity Foundations’ provides the grounding needed for meaningful growth and sets the tone for all future coaching.
             </p>
           </>
@@ -94,7 +148,7 @@ export default function LifeCoachingPage() {
               Personal Growth Coaching
             </h2>
             <p className="text-black/80 leading-relaxed">
-            Following the foundations stage, coaching becomes more personalised and shaped around the child’s individual needs, experiences, and goals.
+            Following the foundations stage, coaching becomes more personalised and shaped around the child’s individual needs, experiences and goals.
             This stage may support areas such as emotional regulation, anxiety, friendships, confidence, self-concept, navigating life changes, and personal development. Sessions are guided by the child’s pace and focus on helping them develop tools they can carry into everyday life.
             There is no fixed curriculum at this stage — support evolves as the child does.
             </p>
@@ -108,7 +162,7 @@ export default function LifeCoachingPage() {
             </h2>
             <p className="text-black/80 leading-relaxed">
             Some children benefit from continued guidance and emotional support over time.
-            Ongoing support provides consistency, reassurance, and a safe space for children to process experiences as they grow and change. This stage is offered by recommendation, ensuring the level of support is appropriate for each child.
+            Ongoing support provides consistency, reassurance and a safe space for children to process experiences as they grow and change. This stage is offered by recommendation, ensuring the level of support is appropriate for each child.
             </p>
           </>
         )}

@@ -49,7 +49,7 @@ export default function FAQPage() {
     {
       question: "How many sessions will my child need?",
       answer:
-        "Every child is different. Some benefit from short-term support, while others prefer ongoing sessions. This can be discussed after the initial session.",
+        "Every child is different. Some benefit from short-term support, while others prefer ongoing sessions. This can be discussed after the initial session with Bina.",
     },
     {
       question: "How do I know if coaching is right for my daughter?",

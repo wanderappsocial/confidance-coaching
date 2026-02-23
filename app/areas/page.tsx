@@ -21,11 +21,11 @@ export default function AreasPage() {
         {/* Intro Paragraph */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <p className="text-base md:text-lg text-black/80 leading-relaxed">
-            Bina’s coaching sessions support girls through the emotional,
-            social, and personal challenges they may experience as they grow.
-            Sessions are tailored to each child and provide a safe,
-            supportive space to explore thoughts and feelings while
-            developing practical tools for everyday life.
+          Bina’s coaching sessions support girls through the emotional, social, and personal
+          challenges they may experience as they grow. Sessions are tailored to each child and
+          provide a safe, supportive space to explore thoughts, feelings, and experiences, while
+          developing practical tools to navigate everyday life with greater self-awareness and
+          confidence.
           </p>
         </div>
 
@@ -38,19 +38,44 @@ export default function AreasPage() {
               Coaching may support girls with:
             </h2>
 
-            <ul className="space-y-4 text-black/80 leading-relaxed">
-              <li>• Building confidence and a positive self-concept</li>
-              <li>• Developing a strong sense of identity and self-worth</li>
-              <li>• Understanding, naming, and expressing emotions</li>
-              <li>• Emotional regulation and managing anxiety</li>
-              <li>• Setting healthy boundaries and personal values</li>
-              <li>• Navigating friendships and communication skills</li>
-              <li>• Coping with bullying and peer challenges</li>
-              <li>• Managing low self-esteem and self-doubt</li>
-              <li>• Dealing with setbacks and disappointment</li>
-              <li>• Adjusting to life changes (moving, separation, loss)</li>
-              <li>• Supporting personal growth and emotional maturity</li>
-            </ul>
+            <ul className="space-y-5 text-black/80">
+
+            {[
+              "Building confidence and a positive self-concept",
+              "Developing a strong sense of identity and self-worth",
+              "Understanding, naming, and expressing emotions",
+              "Emotional regulation and managing anxiety",
+              "Setting healthy boundaries and personal values",
+              "Navigating friendships and communication skills",
+              "Coping with bullying and peer challenges",
+              "Managing low self-esteem and self-doubt",
+              "Dealing with setbacks and disappointment",
+              "Adjusting to life changes (moving, separation, loss)",
+              "Supporting personal growth and emotional maturity",
+            ].map((item, index) => (
+              <li
+                key={index}
+                className="
+                  flex items-start gap-4
+                  bg-white/60
+                  px-5 py-4
+                  rounded-xl
+                  shadow-sm
+                  transition-all duration-300
+                  hover:shadow-md
+                  hover:-translate-y-1
+                "
+              >
+                {/* Elegant Pink Dot */}
+                <span className="mt-2 w-3 h-3 bg-pink-400 rounded-full flex-shrink-0" />
+
+                <span className="leading-relaxed">
+                  {item}
+                </span>
+              </li>
+            ))}
+
+          </ul>
           </div>
 
           {/* Right: Supporting Explanation */}

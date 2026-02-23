@@ -34,9 +34,12 @@ export default function ContactPage() {
             Complete the form below and Bina will be in touch to discuss next steps.
             Alternatively, for general enquiries, you can email directly at:
             <br />
-            <span className="font-medium text-black">
-              hello@yourdomain.co.uk
-            </span>
+            <a
+            href="mailto:bina.confidancecoaching@gmail.com"
+            className="font-medium text-black break-all hover:underline"
+          >
+            bina.confidancecoaching@gmail.com
+          </a>
           </p>
 
           {/* Form */}

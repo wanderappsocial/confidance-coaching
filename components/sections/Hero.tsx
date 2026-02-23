@@ -5,11 +5,6 @@ export default function Hero() {
   return (
     <section
       className="relative"
-      style={{
-        backgroundImage: "url('/images/pink-marble.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/60" />
@@ -20,23 +15,26 @@ export default function Hero() {
         {/* Left: Text */}
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold text-black leading-tight">
-            Building Confident Girls <br /> From The Inside Out
+            Where Movement Meets Mindset - <br /> Building Confident Girls From The Inside Out
           </h1>
 
           <p className="mt-6 text-base md:text-lg text-black/80 max-w-md">
-            Where girls discover who they are and grow into who 
-            they're meant to be
+              At Confidance Coaching girls discover who they are
+              and grow into who they're meant to be
           </p>
 
-          {/* Subtle Divider */}
+          {/* Subtle Divider
           <div className="mt-8 max-w-md w-full h-[2px] bg-black/20 rounded-full" />
 
-          {/* NEW SEPARATED PARAGRAPH */}
+   
           <p className="mt-10 text-sm text-black/70 max-w-md leading-relaxed">
             Through guided workshops, mentorship, and creative expression,
             we empower young girls to build resilience, leadership skills,
             and lasting self-confidence.
           </p>
+          */}
+
+  
 
           {/* CTA */}
           <div className="mt-6">
