@@ -3,42 +3,27 @@ import { FaInstagram, FaTiktok, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section
-      className="relative"
-    >
+    <section className="relative">
+      
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/60" />
 
-      {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         
         {/* Left: Text */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-semibold text-black leading-tight">
-            Where Movement Meets Mindset - <br /> Building Confident Girls From The Inside Out
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-[1.15] tracking-tight">
+            Where Movement Meets Mindset – <br />
+            Building Confident Girls From The Inside Out
           </h1>
 
-          <p className="mt-6 text-base md:text-lg text-black/80 max-w-md">
-              At Confidance Coaching girls discover who they are
-              and grow into who they're meant to be
+          <p className="mt-6 text-base md:text-lg text-black/80 max-w-md leading-relaxed">
+            At Confidance Coaching girls discover who they are
+            and grow into who they're meant to be
           </p>
 
-          {/* Subtle Divider
-          <div className="mt-8 max-w-md w-full h-[2px] bg-black/20 rounded-full" />
-
-   
-          <p className="mt-10 text-sm text-black/70 max-w-md leading-relaxed">
-            Through guided workshops, mentorship, and creative expression,
-            we empower young girls to build resilience, leadership skills,
-            and lasting self-confidence.
-          </p>
-          */}
-
-  
-
-          {/* CTA */}
-          <div className="mt-6">
-            <button className="bg-pink-400 text-black px-6 py-3 rounded-full text-sm hover:bg-pink-500 transition-colors">
+          <div className="mt-8">
+            <button className="bg-pink-400 text-black px-8 py-3 rounded-full text-sm tracking-wide hover:bg-pink-500 transition-all duration-300 shadow-md hover:shadow-lg">
               Book a Free Discovery Call
             </button>
           </div>
@@ -47,7 +32,7 @@ export default function Hero() {
         {/* Right: Image + Social Icons */}
         <div className="flex flex-col items-center md:items-end">
 
-          <div className="rounded-2xl shadow-lg overflow-hidden">
+          <div className="rounded-2xl shadow-xl overflow-hidden">
             <Image
               src="/images/hero-image.png"
               alt="Confidance Coaching"
@@ -58,7 +43,6 @@ export default function Hero() {
             />
           </div>
 
-          {/* Social Icons */}
           <div className="flex gap-6 mt-6 text-2xl text-black">
             <a
               href="https://instagram.com/yourusername"
@@ -96,7 +80,6 @@ export default function Hero() {
           </div>
 
         </div>
-
       </div>
     </section>
   );
