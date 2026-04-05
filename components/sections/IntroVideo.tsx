@@ -61,7 +61,7 @@ export default function IntroVideo() {
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="w-full text-left px-6 py-6 flex justify-between items-center text-black font-medium text-lg"
+                className="w-full text-left px-6 py-6 flex justify-between items-center text-black font-bold text-lg"
               >
                 {item.title}
                 <span className="text-2xl transition-transform">

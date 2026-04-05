@@ -4,7 +4,6 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Font variables injected from next/font */
   --font-heading: var(--font-playfair);
   --font-body: var(--font-lato);
 }
@@ -13,24 +12,23 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* Make Lato the default sans font */
   --font-sans: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* REMOVE dark mode completely */
+
+/* Global reset */
+html, body {
+  min-height: 100%;
+  background: #ffffff;
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body); /* Lato globally */
+  font-family: var(--font-body);
 }
 
-/* Utility class for headings */
+/* Heading font */
 .font-heading {
   font-family: var(--font-heading);
 }

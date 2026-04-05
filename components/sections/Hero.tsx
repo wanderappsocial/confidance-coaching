@@ -6,21 +6,22 @@ export default function Hero() {
     <section className="relative">
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/60" />
 
       <div className="relative max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         
         {/* Left: Text */}
         <div>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-black leading-[1.15] tracking-tight">
-            Where Movement Meets Mindset – <br />
-            Building Confident Girls From The Inside Out
-          </h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-black leading-[1.15] tracking-tight">
+  
+        <span className="font-playfair block font-semibold tracking-tight">
+          Where Movement meets Mindset
+        </span>
 
-          <p className="mt-6 text-base md:text-lg text-black/80 max-w-md leading-relaxed">
-            At Confidance Coaching girls discover who they are
-            and grow into who they're meant to be
-          </p>
+        <span className="font-lato block mt-3 text-2xl md:text-3xl lg:text-4xl font-normal tracking-wide text-black/80">
+        Building Confident Girls from the Inside Out
+        </span>
+
+        </h1>
 
           <div className="mt-8">
             <button className="bg-pink-400 text-black px-8 py-3 rounded-full text-sm tracking-wide hover:bg-pink-500 transition-all duration-300 shadow-md hover:shadow-lg">

@@ -23,17 +23,17 @@ export default function Navbar() {
         />
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-6 text-sm text-black">
+        <ul className="hidden md:flex items-center gap-6 text-sm text-black font-medium">
 
-          <li><Link className="hover:opacity-70" href="/">Home</Link></li>
-          <li><Link className="hover:opacity-70" href="/about">About</Link></li>
-          <li><Link className="hover:opacity-70" href="/areas">Areas</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/">Home</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/about">About</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/areas">Areas</Link></li>
 
           {/* Desktop Dropdown */}
           <li className="relative group">
             <Link
               href="/services"
-              className="hover:opacity-70 inline-flex items-center gap-1"
+              className="hover:opacity-70 inline-flex items-center gap-1 font-bold"
             >
               Our Services
               <span className="text-xs">▾</span>
@@ -58,9 +58,9 @@ export default function Navbar() {
             </div>
           </li>
 
-          <li><Link className="hover:opacity-70" href="/stories">Success Stories</Link></li>
-          <li><Link className="hover:opacity-70" href="/contact">Contact Us</Link></li>
-          <li><Link className="hover:opacity-70" href="/faq">FAQs</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/stories">Success Stories</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/contact">Contact Us</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/faq">FAQs</Link></li>
 
         </ul>
 
