@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import IntroVideo from "@/components/sections/IntroVideo";
+import TopBanner from "@/components/sections/TopBanner"; // 👈 ADD THIS
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-white/40 pointer-events-none" />
 
       <div className="relative z-10">
+        <TopBanner /> {/* 👈 ADD THIS */}
         <Hero />
         <IntroVideo />
       </div>

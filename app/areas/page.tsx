@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AreasPage() {
   return (
     <section
@@ -27,6 +29,23 @@ export default function AreasPage() {
           developing practical tools to navigate everyday life with greater self-awareness and
           confidence.
           </p>
+        </div>
+
+        {/* Illustration Image */}
+        
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="relative w-full flex justify-center">
+            
+            <Image
+              src="/images/arrow-transparent.png"
+              alt="Growth and coaching journey"
+              width={900}
+              height={400}
+              className="w-full h-auto object-contain"
+              priority
+            />
+
+          </div>
         </div>
 
         {/* Main Content Grid */}
