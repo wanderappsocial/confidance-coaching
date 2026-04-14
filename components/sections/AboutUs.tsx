@@ -52,9 +52,25 @@ export default function AboutUs() {
       <div className="relative max-w-6xl mx-auto px-6">
 
         {/* Heading */}
-        <h2 className="text-4xl font-semibold text-center mb-20">
+        <div className="text-center mb-16">
+
+        <h2 className="text-4xl font-semibold">
           About Us
         </h2>
+
+        {/* Sticker Image */}
+        <div className="mt-6 flex justify-center">
+                  <Image
+            src="/images/about-us-transparent.png"
+            alt="Decorative sticker"
+            width={100}
+            height={100}
+            className="w-[80px] md:w-[100px] lg:w-[110px] h-auto object-contain opacity-95"
+            priority
+          />
+        </div>
+
+        </div>
 
 
         {/* Sections */}
