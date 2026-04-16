@@ -26,7 +26,7 @@ export default function IntroVideo() {
       image: "/images/sticker1.jpeg",
     },
     {
-      title: "Where mindset meets movement",
+      title: "Where Movement meets Mindset",
       content:
         "Bina strongly believes in the powerful connection between mind and body. Her sessions integrate both elements, combining mindset work with movement-based practices. Through guided mind tasks and expressive dance, she helps girls reconnect with themselves, strengthen their inner presence, and embody the emotional skills they are learning.",
       image: "/images/sticker6.jpeg",

@@ -15,7 +15,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Image
-          src="/images/logo.png"
+          src="/images/logo1.png"
           alt="Confidance Logo"
           width={170}
           height={50}

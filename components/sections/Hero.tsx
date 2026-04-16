@@ -9,7 +9,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-black leading-[1.15] tracking-tight">
           
           <span className="font-playfair block font-semibold tracking-tight">
-            Where Movement meets Mindset
+            Move Through Your Feelings
           </span>
 
           <span className="font-lato block mt-3 text-2xl md:text-3xl lg:text-4xl font-normal tracking-wide text-black/80">
