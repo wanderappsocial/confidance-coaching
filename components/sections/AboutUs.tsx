@@ -54,18 +54,18 @@ export default function AboutUs() {
         {/* Heading */}
         <div className="text-center mb-16">
 
-        <h2 className="text-4xl font-semibold">
+        <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
           About Us
-        </h2>
+        </h1>
 
         {/* Sticker Image */}
-        <div className="mt-6 flex justify-center">
-                  <Image
+        <div className="mt-4 flex justify-center">
+          <Image
             src="/images/about-us-transparent.png"
             alt="Decorative sticker"
             width={100}
             height={100}
-            className="w-[80px] md:w-[100px] lg:w-[110px] h-auto object-contain opacity-95"
+            className="h-[80px] md:h-[100px] lg:h-[110px] w-auto object-contain opacity-95"
             priority
           />
         </div>

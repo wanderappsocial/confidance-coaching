@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Modal from "@/components/ui/Modal";
+import Image from "next/image";
 
 type ModalType = "stage1" | "stage2" | "stage3" | null;
 
@@ -22,9 +23,26 @@ export default function LifeCoachingPage() {
       <div className="relative max-w-6xl mx-auto px-6 text-center">
 
         {/* Page Title */}
-        <h1 className="text-4xl font-semibold mb-10 text-black">
+        {/* Heading + Sticker */}
+        <div className="text-center mb-16">
+
+        <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
           Life Coaching
         </h1>
+
+        {/* Sticker */}
+        <div className="mt-4 flex justify-center">
+          <Image
+            src="/images/girl2.png" // best to use growth sticker here 🌸
+            alt="Decorative sticker"
+            width={100}
+            height={100}
+            className="h-[80px] md:h-[100px] lg:h-[110px] w-auto object-contain opacity-95"
+            priority
+          />
+        </div>
+
+        </div>
 
         {/* Coaching Journey Intro */}
         <div className="max-w-4xl mx-auto mb-16">
@@ -49,77 +67,73 @@ export default function LifeCoachingPage() {
       {/* Stage 1 */}
       <button
         onClick={() => setActiveModal("stage1")}
-        className="
-          w-64 h-64
-          md:w-72 md:h-72
-          rounded-full
-          bg-white/85 backdrop-blur-md
-          shadow-xl
-          flex items-center justify-center
-          text-center
-          px-6
-          text-black font-medium
-          transition-all duration-500
-          hover:-translate-y-3
-          hover:shadow-2xl
-          hover:bg-white
-        "
+        className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-white/85 backdrop-blur-md shadow-xl flex items-center justify-center text-center px-6 text-black transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:bg-white"
       >
+        <div className="flex flex-col items-center justify-center gap-3 font-semibold">
+
         <span className="leading-relaxed">
-          Stage One<br />
-          <strong>Identity Foundations</strong>
-        </span>
+            Stage One<br />
+            Identity Foundations
+          </span>
+          
+          <Image
+            src="/images/stage1.jpeg"
+            alt=""
+            width={70}
+            height={70}
+            className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
+          />
+
+          
+
+        </div>
       </button>
 
       {/* Stage 2 */}
       <button
-        onClick={() => setActiveModal("stage2")}
-        className="
-          w-64 h-64
-          md:w-72 md:h-72
-          rounded-full
-          bg-white/85 backdrop-blur-md
-          shadow-xl
-          flex items-center justify-center
-          text-center
-          px-6
-          text-black font-medium
-          transition-all duration-500
-          hover:-translate-y-3
-          hover:shadow-2xl
-          hover:bg-white
-        "
-      >
-        <span className="leading-relaxed">
-          Stage Two<br />
-          <strong>Personal Growth Coaching</strong>
-        </span>
-      </button>
+          onClick={() => setActiveModal("stage2")}
+          className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-white/85 backdrop-blur-md shadow-xl flex items-center justify-center text-center px-6 text-black transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:bg-white"
+        >
+          <div className="flex flex-col items-center justify-center gap-3 font-semibold">
+
+          <span className="leading-relaxed">
+              Stage Two<br />
+              Personal Growth Coaching
+            </span>
+            
+            <Image
+              src="/images/stage2.jpeg"
+              alt=""
+              width={70}
+              height={70}
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
+            />  
+
+          </div>
+        </button>
 
       {/* Stage 3 */}
       <button
-        onClick={() => setActiveModal("stage3")}
-        className="
-          w-64 h-64
-          md:w-72 md:h-72
-          rounded-full
-          bg-white/85 backdrop-blur-md
-          shadow-xl
-          flex items-center justify-center
-          text-center
-          px-6
-          text-black font-medium
-          transition-all duration-500
-          hover:-translate-y-3
-          hover:shadow-2xl
-          hover:bg-white
-        "
-      >
-        <span className="leading-relaxed">
-          Stage Three<br />
-          <strong>Ongoing Support</strong>
-        </span>
-      </button>
+          onClick={() => setActiveModal("stage3")}
+          className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-white/85 backdrop-blur-md shadow-xl flex items-center justify-center text-center px-6 text-black transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:bg-white"
+        >
+          <div className="flex flex-col items-center justify-center gap-3 font-semibold">
+
+          <span className="leading-relaxed">
+              Stage Three<br />
+              Ongoing Support
+            </span>
+            
+            <Image
+              src="/images/stage3.jpeg"
+              alt=""
+              width={70}
+              height={70}
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
+            />
+
+          </div>
+        </button>
 
       </div>
       </div>

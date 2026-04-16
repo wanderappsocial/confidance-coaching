@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type FAQItem = {
   question: string;
@@ -73,14 +74,28 @@ export default function FAQPage() {
 
         {/* Page Title */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-semibold text-black mb-6">
-            FAQs
-          </h1>
 
-          <p className="text-black/80">
+        <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
+          FAQs
+        </h1>
+
+        {/* Sticker */}
+        <div className="mt-4 flex justify-center">
+          <Image
+            src="/images/girl4.png" // same support theme as Contact/Stories
+            alt="Decorative sticker"
+            width={100}
+            height={100}
+            className="h-[80px] md:h-[100px] lg:h-[110px] w-auto object-contain opacity-95"
+            priority
+          />
+        </div>
+
+          <p className="text-black/80 mt-6">
             A few commonly asked questions to help you understand
             how coaching works.
           </p>
+
         </div>
 
         {/* Accordion */}
@@ -95,7 +110,7 @@ export default function FAQPage() {
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="w-full text-left px-6 py-5 flex justify-between items-center text-black font-medium"
+                className="w-full text-left px-6 py-5 flex justify-between items-center text-black font-semibold"
               >
                 {faq.question}
                 <span className="text-xl">
@@ -104,7 +119,7 @@ export default function FAQPage() {
               </button>
 
               {openIndex === index && (
-                <div className="px-6 pb-6 text-black/80 leading-relaxed">
+                <div className="px-6 pb-6 text-black/90 leading-relaxed font-medium">
                   {faq.answer}
                 </div>
               )}

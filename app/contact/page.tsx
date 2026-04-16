@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -17,15 +18,29 @@ export default function ContactPage() {
 
         {/* Page Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-semibold text-black mb-6">
-            Contact Us
-          </h1>
 
-          <p className="text-black/80 max-w-3xl mx-auto leading-relaxed">
-            If you’re exploring coaching for your child, the FAQs page is a helpful place to start.
-            If you still have questions or would like to talk things through, Bina would be happy to connect.
-          </p>
+        <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
+          Contact Us
+        </h1>
+
+        {/* Sticker */}
+        <div className="mt-4 flex justify-center">
+          <Image
+            src="/images/girl7.png" // same as Success Stories
+            alt="Decorative sticker"
+            width={100}
+            height={100}
+            className="h-[80px] md:h-[100px] lg:h-[110px] w-auto object-contain opacity-95"
+            priority
+          />
         </div>
+
+  <p className="text-black/80 max-w-3xl mx-auto leading-relaxed mt-6">
+    If you’re exploring coaching for your child, the FAQs page is a helpful place to start.
+    If you still have questions or would like to talk things through, Bina would be happy to connect.
+  </p>
+
+</div>
 
         {/* Contact Card */}
         <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-10 md:p-14">

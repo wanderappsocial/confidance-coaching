@@ -16,34 +16,51 @@ export default function AreasPage() {
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-semibold text-center text-black mb-10 tracking-wide">
+        {/* Heading + Sticker + Intro */}
+        <div className="text-center mb-16">
+
+        <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
           Areas
         </h1>
 
+        {/* Sticker */}
+        <div className="mt-4 flex justify-center">
+          <Image
+            src="/images/girl1.png"
+            alt="Decorative sticker"
+            width={100}
+            height={100}
+            className="h-[80px] md:h-[100px] lg:h-[110px] w-auto object-contain opacity-95"
+            priority
+          />
+        </div>
+
         {/* Intro Paragraph */}
-        <div className="max-w-3xl mx-auto text-center mb-20">
+        <div className="max-w-3xl mx-auto mt-6">
           <p className="text-base md:text-lg text-black/80 leading-relaxed">
-          Bina’s coaching sessions support girls through the emotional, social, and personal
-          challenges they may experience as they grow. Sessions are tailored to each child and
-          provide a safe, supportive space to explore thoughts, feelings, and experiences, while
-          developing practical tools to navigate everyday life with greater self-awareness and
-          confidence.
+            Bina’s coaching sessions support girls through the emotional, social, and personal
+            challenges they may experience as they grow. Sessions are tailored to each child and
+            provide a safe, supportive space to explore thoughts, feelings, and experiences, while
+            developing practical tools to navigate everyday life with greater self-awareness and
+            confidence.
           </p>
+        </div>
+
         </div>
 
         {/* Illustration Image */}
         
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="relative w-full flex justify-center">
+        <div className="max-w-6xl mx-auto mb-8 md:mb-10">
+          <div className="relative w-full">
             
-            <Image
-              src="/images/arrow-transparent.png"
-              alt="Growth and coaching journey"
-              width={900}
-              height={400}
-              className="w-full h-auto object-contain"
-              priority
-            />
+          <Image
+            src="/images/sadtohappygirlarrow.png"
+            alt="Growth and coaching journey"
+            width={900}
+            height={400}
+            className="w-full h-auto object-contain block"
+            priority
+          />
 
           </div>
         </div>
@@ -98,7 +115,7 @@ export default function AreasPage() {
           </div>
 
           {/* Right: Supporting Explanation */}
-          <div className="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-xl border border-white/40 flex items-center">
+          <div className="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-xl border border-white/40 h-fit self-start mx-auto max-w-md">
             <p className="text-black/80 leading-relaxed text-base md:text-lg">
               All sessions are age-appropriate and delivered in a nurturing,
               non-judgemental way that encourages emotional awareness,

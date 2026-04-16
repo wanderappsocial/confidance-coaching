@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Modal from "@/components/ui/Modal";
+import Image from "next/image";
 
 type ServiceType =
   | "Private Dance Classes"
@@ -26,9 +27,26 @@ export default function OtherServicesPage() {
       <div className="absolute inset-0 bg-white/70" />
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
-        <h1 className="text-4xl font-semibold mb-16 text-black">
+        {/* Heading + Sticker */}
+        <div className="text-center mb-16">
+
+        <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
           Other Services
         </h1>
+
+        {/* Sticker */}
+        <div className="mt-4 flex justify-center">
+          <Image
+            src="/images/girl2.png" // you can change this if you want a neutral sticker later
+            alt="Decorative sticker"
+            width={100}
+            height={100}
+            className="h-[80px] md:h-[100px] lg:h-[110px] w-auto object-contain opacity-95"
+            priority
+          />
+        </div>
+
+        </div>
 
         {/* Buttons Layout */}
         <div className="flex flex-col items-center gap-16">
@@ -38,23 +56,20 @@ export default function OtherServicesPage() {
 
             {/* Private Dance */}
             <button
-              onClick={() => setActiveModal("Private Dance Classes")}
-              className="
-                w-60 h-60 md:w-64 md:h-64
-                rounded-full
-                bg-white/85 backdrop-blur-md
-                shadow-xl
-                flex items-center justify-center
-                text-center
-                px-6
-                text-black font-medium
-                transition-all duration-500
-                hover:-translate-y-3
-                hover:shadow-2xl
-              "
-            >
-              Private Dance Classes
-            </button>
+                onClick={() => setActiveModal("Private Dance Classes")}
+                className="w-60 h-60 md:w-64 md:h-64 rounded-full bg-white/85 backdrop-blur-md shadow-xl flex items-center justify-center text-center px-6 text-black font-semibold transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl"
+              >
+                <div className="flex flex-col items-center justify-center gap-3">
+                  <Image
+                    src="/images/privatedance.png"
+                    alt=""
+                    width={80}
+                    height={80}
+                    className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
+                  />
+                  <span>Private Dance Classes</span>
+                </div>
+              </button>
 
             {/* School Workshops */}
             <button
@@ -67,13 +82,22 @@ export default function OtherServicesPage() {
                 flex items-center justify-center
                 text-center
                 px-6
-                text-black font-medium
+                text-black font-semibold
                 transition-all duration-500
                 hover:-translate-y-3
                 hover:shadow-2xl
               "
             >
-              School Workshops
+              <div className="flex flex-col items-center justify-center gap-3">
+                  <Image
+                    src="/images/school.png"
+                    alt=""
+                    width={80}
+                    height={80}
+                    className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
+                  />
+                  <span>School Workshops</span>
+                </div>
             </button>
 
             {/* Weddings */}
@@ -87,13 +111,22 @@ export default function OtherServicesPage() {
                 flex items-center justify-center
                 text-center
                 px-6
-                text-black font-medium
+                text-black font-semibold
                 transition-all duration-500
                 hover:-translate-y-3
                 hover:shadow-2xl
               "
             >
-              Weddings & Events
+              <div className="flex flex-col items-center justify-center gap-3">
+                  <Image
+                    src="/images/wedding.png"
+                    alt=""
+                    width={80}
+                    height={80}
+                    className="h-24 md:h-28 lg:h-32 w-auto object-contain opacity-90"
+                  />
+                  <span>Weddings & Events</span>
+                </div>
             </button>
 
             {/* Birthday & Hen */}
@@ -107,13 +140,22 @@ export default function OtherServicesPage() {
                 flex items-center justify-center
                 text-center
                 px-6
-                text-black font-medium
+                text-black font-semibold
                 transition-all duration-500
                 hover:-translate-y-3
                 hover:shadow-2xl
               "
             >
-              Birthday & Hen Parties
+              <div className="flex flex-col items-center justify-center gap-3">
+                  <Image
+                    src="/images/birthday.png"
+                    alt=""
+                    width={80}
+                    height={80}
+                    className="h-24 md:h-28 lg:h-32 w-auto object-contain opacity-90"
+                  />
+                  <span>Birthday & Hen Parties</span>
+                </div>
             </button>
 
           </div>
@@ -126,7 +168,7 @@ export default function OtherServicesPage() {
               px-14 py-6
               rounded-2xl
               shadow-lg
-              text-black font-medium
+              text-black font-semibold
               transition-all duration-500
               hover:-translate-y-2
               hover:shadow-2xl
