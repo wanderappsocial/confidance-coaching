@@ -54,7 +54,7 @@ export default function AreasPage() {
           <div className="relative w-full">
             
           <Image
-            src="/images/sadtohappygirlarrow.png"
+            src="/images/arrow3.png"
             alt="Growth and coaching journey"
             width={900}
             height={400}

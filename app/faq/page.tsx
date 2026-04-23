@@ -128,6 +128,17 @@ export default function FAQPage() {
 
         </div>
 
+        {/* Image Below FAQs */}
+        <div className="mt-12 -mx-6">
+          <Image
+            src="/images/positive-thoughts-tp.png"
+            alt="FAQ illustration"
+            width={1200}
+            height={800}
+            className="w-full h-[220px] md:h-auto object-cover opacity-95"
+          />
+        </div>
+
         {/* CTA */}
         <div className="text-center mt-16">
           <p className="text-black/80 mb-6">

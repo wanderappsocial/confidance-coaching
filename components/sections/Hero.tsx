@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative">
 
-      <div className="relative max-w-4xl mx-auto px-6 pt-12 pb-16 md:pb-20 flex flex-col items-center text-center">
+      <div className="relative max-w-4xl mx-auto px-6 pt-0 pb-16 md:pb-20 flex flex-col items-center text-center">
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-black leading-[1.15] tracking-tight">
           

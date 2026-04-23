@@ -57,9 +57,24 @@ export default function OtherServicesPage() {
             {/* Private Dance */}
             <button
                 onClick={() => setActiveModal("Private Dance Classes")}
-                className="w-60 h-60 md:w-64 md:h-64 rounded-full bg-white/85 backdrop-blur-md shadow-xl flex items-center justify-center text-center px-6 text-black font-semibold transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl"
+                className="
+  w-64 h-64 md:w-72 md:h-72
+  rounded-full
+  bg-white/85 backdrop-blur-md
+  shadow-xl
+  flex items-center justify-center
+  text-center
+  px-6
+  text-black font-semibold
+  transition-all duration-500
+  hover:-translate-y-3
+  hover:shadow-2xl
+  group
+"
               >
                 <div className="flex flex-col items-center justify-center gap-3">
+
+                <span>Private Dance Classes</span>
                   <Image
                     src="/images/privatedance.png"
                     alt=""
@@ -67,7 +82,9 @@ export default function OtherServicesPage() {
                     height={80}
                     className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
                   />
-                  <span>Private Dance Classes</span>
+                      <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">+</span>
+
+                  
                 </div>
               </button>
 
@@ -75,20 +92,23 @@ export default function OtherServicesPage() {
             <button
               onClick={() => setActiveModal("School Workshops")}
               className="
-                w-60 h-60 md:w-64 md:h-64
-                rounded-full
-                bg-white/85 backdrop-blur-md
-                shadow-xl
-                flex items-center justify-center
-                text-center
-                px-6
-                text-black font-semibold
-                transition-all duration-500
-                hover:-translate-y-3
-                hover:shadow-2xl
-              "
+  w-64 h-64 md:w-72 md:h-72
+  rounded-full
+  bg-white/85 backdrop-blur-md
+  shadow-xl
+  flex items-center justify-center
+  text-center
+  px-6
+  text-black font-semibold
+  transition-all duration-500
+  hover:-translate-y-3
+  hover:shadow-2xl
+  group
+"
             >
               <div className="flex flex-col items-center justify-center gap-3">
+
+              <span>School Workshops</span>
                   <Image
                     src="/images/school.png"
                     alt=""
@@ -96,7 +116,9 @@ export default function OtherServicesPage() {
                     height={80}
                     className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
                   />
-                  <span>School Workshops</span>
+                      <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">+</span>
+
+                  
                 </div>
             </button>
 
@@ -104,20 +126,23 @@ export default function OtherServicesPage() {
             <button
               onClick={() => setActiveModal("Weddings & Events")}
               className="
-                w-60 h-60 md:w-64 md:h-64
-                rounded-full
-                bg-white/85 backdrop-blur-md
-                shadow-xl
-                flex items-center justify-center
-                text-center
-                px-6
-                text-black font-semibold
-                transition-all duration-500
-                hover:-translate-y-3
-                hover:shadow-2xl
-              "
+  w-64 h-64 md:w-72 md:h-72
+  rounded-full
+  bg-white/85 backdrop-blur-md
+  shadow-xl
+  flex items-center justify-center
+  text-center
+  px-6
+  text-black font-semibold
+  transition-all duration-500
+  hover:-translate-y-3
+  hover:shadow-2xl
+  group
+"
             >
               <div className="flex flex-col items-center justify-center gap-3">
+
+              <span>Weddings & Events</span>
                   <Image
                     src="/images/wedding.png"
                     alt=""
@@ -125,7 +150,9 @@ export default function OtherServicesPage() {
                     height={80}
                     className="h-24 md:h-28 lg:h-32 w-auto object-contain opacity-90"
                   />
-                  <span>Weddings & Events</span>
+                      <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">+</span>
+
+                  
                 </div>
             </button>
 
@@ -133,20 +160,22 @@ export default function OtherServicesPage() {
             <button
               onClick={() => setActiveModal("Birthday & Hen Parties")}
               className="
-                w-60 h-60 md:w-64 md:h-64
-                rounded-full
-                bg-white/85 backdrop-blur-md
-                shadow-xl
-                flex items-center justify-center
-                text-center
-                px-6
-                text-black font-semibold
-                transition-all duration-500
-                hover:-translate-y-3
-                hover:shadow-2xl
-              "
+  w-64 h-64 md:w-72 md:h-72
+  rounded-full
+  bg-white/85 backdrop-blur-md
+  shadow-xl
+  flex items-center justify-center
+  text-center
+  px-6
+  text-black font-semibold
+  transition-all duration-500
+  hover:-translate-y-3
+  hover:shadow-2xl
+  group
+"
             >
               <div className="flex flex-col items-center justify-center gap-3">
+              <span>Birthday & Hen Parties</span>
                   <Image
                     src="/images/birthday.png"
                     alt=""
@@ -154,7 +183,9 @@ export default function OtherServicesPage() {
                     height={80}
                     className="h-24 md:h-28 lg:h-32 w-auto object-contain opacity-90"
                   />
-                  <span>Birthday & Hen Parties</span>
+                      <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">+</span>
+
+                  
                 </div>
             </button>
 
@@ -175,7 +206,10 @@ export default function OtherServicesPage() {
             "
           >
             What To Expect
+            
           </button>
+
+          
 
         </div>
       </div>

@@ -69,6 +69,7 @@ export default function LifeCoachingPage() {
         onClick={() => setActiveModal("stage1")}
         className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-white/85 backdrop-blur-md shadow-xl flex items-center justify-center text-center px-6 text-black transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:bg-white"
       >
+        
         <div className="flex flex-col items-center justify-center gap-3 font-semibold">
 
         <span className="leading-relaxed">
@@ -83,6 +84,14 @@ export default function LifeCoachingPage() {
             height={70}
             className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
           />
+
+          {/* PLUS ICON BELOW IMAGE */}
+
+    <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">
+
++
+
+</span>
 
           
 
@@ -109,6 +118,14 @@ export default function LifeCoachingPage() {
               className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
             />  
 
+            {/* PLUS ICON BELOW IMAGE */}
+
+    <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">
+
++
+
+</span>
+
           </div>
         </button>
 
@@ -131,6 +148,10 @@ export default function LifeCoachingPage() {
               height={70}
               className="h-20 md:h-24 lg:h-28 w-auto object-contain opacity-90"
             />
+
+            {/* PLUS ICON BELOW IMAGE */}
+
+    <span className="text-2xl md:text-3xl font-bold text-black/60 group-hover:text-black group-hover:rotate-90 transition">+</span>
 
           </div>
         </button>

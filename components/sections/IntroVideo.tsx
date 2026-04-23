@@ -14,27 +14,27 @@ export default function IntroVideo() {
 
   const introItems: IntroItem[] = [
     {
-      title: "What if she never had to lose herself first to find herself later?",
+      title: "What is Confidance Coaching?",
       content:
-        "Life sometimes brings all of us moments of challenge, uncertainty, and self-doubt. Often, we don’t recognise the impact of these experiences until adulthood, when everything builds up and we realise we can no longer run from ourselves. Many of us begin the inner work later in life, but imagine how different things might have been if we’d grown up with tools that nurtured our emotional wellbeing from the start. Imagine the clarity, resilience, and self-belief we could have carried into adulthood.",
+        "Confidance Coaching is a unique approach to life coaching for girls, designed to support those who may be experiencing anxiety, navigating life changes, struggling with friendships, or feeling unsure of who they are. It is also for girls who simply want to understand themselves better and feel more confident expressing who they are. At its core, Confidance Coaching focuses on helping girls build self-awareness, emotional understanding, and confidence from within. Sessions draw on a range of techniques, including elements of NLP (neuro-linguistic programming), alongside creative and engaging methods such as movement, dance, games, and art.",
       image: "/images/sticker2.jpeg",
     },
     {
-      title: "Nurturing emotionally strong and self-assured young women",
+      title: "How does Movement and Mindset combine?",
       content:
-        "Bina is a dedicated Life Coach for girls aged 8 and above. She supports young girls in recognising, understanding, and regulating their emotions so they can grow into strong, self-assured, and independent-thinking young women. Her mission is to equip the next generation with the emotional tools they need to build a deep sense of self-worth, self-love, and trust in their own inner voice.",
+        "While the coaching is rooted in mindset and emotional development, movement plays an important role in the process. Many children find it difficult to sit and talk about their feelings for extended periods of time, so incorporating dance and movement allows them to express themselves more naturally, feel more at ease, and stay engaged. This blended approach creates a safe, supportive space where girls can explore their emotions, build confidence, and develop the tools they need to navigate life with greater ease and self-trust.",
       image: "/images/sticker1.jpeg",
     },
     {
-      title: "Where Movement meets Mindset",
+      title: "Who is the Life Coach?",
       content:
-        "Bina strongly believes in the powerful connection between mind and body. Her sessions integrate both elements, combining mindset work with movement-based practices. Through guided mind tasks and expressive dance, she helps girls reconnect with themselves, strengthen their inner presence, and embody the emotional skills they are learning.",
+        "Bina is a dedicated Life Coach for girls aged 8 and above. She supports young girls in recognising, understanding, and regulating their emotions so they can grow into strong, self-assured, and independent-thinking young women. Her mission is to equip the next generation with the emotional tools they need to build a deep sense of self-worth, self-love, and trust in their own inner voice. Bina strongly believes in the powerful connection between mind and body. Her sessions integrate both elements, combining mindset work with movement-based practices. Through guided mind tasks and expressive dance, she helps girls reconnect with themselves, strengthen their inner presence, and embody the emotional skills they are learning. With her compassionate and grounded style, Bina helps girls develop a strong sense of identity, healthy decision-making skills, and genuine self-belief.",
       image: "/images/sticker6.jpeg",
     },
     {
-      title: "Helping Girls Grow Into Their Most Confident and Authentic Selves",
+      title: "Why start young?",
       content:
-        "With her compassionate and grounded style, Bina helps girls develop a strong sense of identity, healthy decision-making skills, and genuine self-belief.",
+        "Life sometimes brings all of us moments of challenge, uncertainty, and self-doubt. Often, we don’t recognise the impact of these experiences until adulthood, when everything builds up and we realise we can no longer run from ourselves. Many of us begin the inner work later in life, but imagine how different things might have been if we’d grown up with tools that nurtured our emotional wellbeing from the start. Imagine the clarity, resilience, and self-belief we could have carried into adulthood.",
       image: "/images/sticker3.jpeg",
     },
   ];

@@ -43,7 +43,12 @@ export default function ServicesPage() {
             href="/services/life-coaching"
             className="bg-white/80 backdrop-blur-md px-12 py-10 rounded-3xl shadow-xl hover:scale-105 transition text-black flex items-center justify-center"
           >
-            <div className="flex flex-col items-center justify-center gap-4 font-semibold text-xl">
+            {/* PLUS ICON */}
+
+            <span className="absolute top-4 right-5 text-2xl font-bold text-black/80 group-hover:text-black group-hover:rotate-90 transition">
+  +
+</span>            
+<div className="flex flex-col items-center justify-center gap-4 font-semibold text-xl">
 
             <span>Life Coaching</span>
 
@@ -64,6 +69,9 @@ export default function ServicesPage() {
           href="/services/other-services"
           className="bg-white/80 backdrop-blur-md px-12 py-10 rounded-3xl shadow-xl hover:scale-105 transition text-black flex items-center justify-center"
         >
+<span className="absolute top-4 right-5 text-2xl font-bold text-black/80 group-hover:text-black group-hover:rotate-90 transition">
+  +
+</span>
           <div className="flex flex-col items-center justify-center gap-4 font-semibold text-xl">
 
           <span>Other Services</span>
