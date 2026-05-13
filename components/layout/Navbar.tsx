@@ -59,7 +59,7 @@ export default function Navbar() {
           </li>
 
           <li><Link className="hover:opacity-70 font-bold" href="/stories">Success Stories</Link></li>
-          <li><Link className="hover:opacity-70 font-bold" href="/free-resources">Free Resources</Link></li>
+          <li><Link className="hover:opacity-70 font-bold" href="/free-resources">FREE Resources</Link></li>
           <li><Link className="hover:opacity-70 font-bold" href="/contact">Contact Us</Link></li>
           <li><Link className="hover:opacity-70 font-bold" href="/faq">FAQs</Link></li>
 
@@ -149,7 +149,7 @@ export default function Navbar() {
             </Link>
 
             <Link href="/free-resources" onClick={() => setIsOpen(false)} className="block">
-              Free Resources
+              FREE Resources
             </Link>
 
             <Link href="/contact" onClick={() => setIsOpen(false)} className="block">

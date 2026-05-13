@@ -19,7 +19,7 @@ export default function FreeResourcesPage() {
         <div className="text-center mb-16">
 
           <h1 className="text-4xl md:text-5xl font-semibold text-black tracking-wide">
-            Free Resources
+            FREE Resources
           </h1>
 
           {/* Sticker */}
