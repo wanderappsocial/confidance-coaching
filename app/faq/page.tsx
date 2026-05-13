@@ -23,6 +23,11 @@ export default function FAQPage() {
         "Life coaching is strengths-based and growth-oriented. While Bina may gently explore past experiences when helpful, sessions focus on empowering growth in the present and future rather than diagnosing or treating mental health conditions.",
     },
     {
+      question: "Is it mainly dance or coaching?",
+      answer:
+        "Confidance Coaching is primarily focused on life coaching, with sessions centred around mindset growth, emotional development, and building self-awareness. Dance and movement are used as a supportive tool within sessions to help girls feel more comfortable, express themselves more naturally, and stay engaged — especially for those who may find it difficult to sit and talk about their feelings. For those looking for sessions that are more dance-focused, separate dance services are available. These can be found in the Other Services section of the website.",
+    },
+    {
       question: "What age groups do you work with?",
       answer:
         "Bina works with girls aged 8 and above. Sessions are always age-appropriate and tailored to each child’s development, personality, and needs.",

@@ -34,6 +34,10 @@ export default function OtherServicesPage() {
           Other Services
         </h1>
 
+        <p className="mt-5 max-w-2xl mx-auto text-base md:text-lg text-black/75 leading-relaxed">
+        Primarily focused on dance, movement, and creative expression in a fun and engaging way.
+        </p>
+
         {/* Sticker */}
         <div className="mt-4 flex justify-center">
           <Image

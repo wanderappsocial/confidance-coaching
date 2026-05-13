@@ -16,7 +16,7 @@ export default function IntroVideo() {
     {
       title: "What is Confidance Coaching?",
       content:
-        "Confidance Coaching is a unique approach to life coaching for girls, designed to support those who may be experiencing anxiety, navigating life changes, struggling with friendships, or feeling unsure of who they are. It is also for girls who simply want to understand themselves better and feel more confident expressing who they are. At its core, Confidance Coaching focuses on helping girls build self-awareness, emotional understanding, and confidence from within. Sessions draw on a range of techniques, including elements of NLP (neuro-linguistic programming), alongside creative and engaging methods such as movement, dance, games, and art.",
+        "Confidance Coaching is a unique approach to life coaching for girls, designed to support those who may be experiencing anxiety, navigating life changes, struggling with friendships, or feeling unsure of who they are. It is also for girls who simply want to understand themselves better and feel more confident expressing who they are. <br /><br />At its core, Confidance Coaching focuses on helping girls build self-awareness, emotional understanding, and confidence from within. Sessions draw on a range of techniques, including elements of NLP (neuro-linguistic programming), alongside creative and engaging methods such as movement, dance, games, and art.",
       image: "/images/sticker2.jpeg",
     },
     {
@@ -46,7 +46,7 @@ export default function IntroVideo() {
       <div className="max-w-7xl mx-auto px-6 pt-10 md:pt-14">
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
           <video
-            src="/videos/IntroVideo.mp4"
+            src="/videos/IntroVideoUpdated.mov"
             className="w-full h-full object-cover"
             controls
             playsInline

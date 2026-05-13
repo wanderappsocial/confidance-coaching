@@ -30,6 +30,10 @@ export default function LifeCoachingPage() {
           Life Coaching
         </h1>
 
+        <p className="mt-5 max-w-2xl mx-auto text-base md:text-lg text-black/75 leading-relaxed">
+          Primarily focused on mindset growth, emotional development, and building confidence from within.
+        </p>
+
         {/* Sticker */}
         <div className="mt-4 flex justify-center">
           <Image
