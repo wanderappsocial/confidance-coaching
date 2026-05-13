@@ -46,7 +46,7 @@ export default function IntroVideo() {
       <div className="max-w-7xl mx-auto px-6 pt-10 md:pt-14">
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
           <video
-            src="/videos/IntroVideo.mp4"
+            src="/videos/IntroVideoUpdated.mp4"
             className="w-full h-full object-cover"
             controls
             playsInline
